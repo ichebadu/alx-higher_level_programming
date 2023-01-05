@@ -1,29 +1,18 @@
-ble File  28 lines (24 sloc)  674 Bytes
 #!/usr/bin/python3
-"""This function adds two integers
-and a and b are the two paramter this
-function performs the operation on
+"""
+This is the "0-add_integer" module.
+The 0-add_integer module supplies one function, add_integer(a, b).
 """
 
 
-def add_integer(a, b=98):
-    """Add two integer
-    Arg:
-        a = first paramter to be added
-        b = second parameter to be added
-    paramter b has defalut value 98
-    """
-    if not isinstance(a, (int, float)):
+def add_integer(a, b):
+    """Return the addition of two numbers."""
+    if type(a) is not int and type(a) is not float:
         raise TypeError("a must be an integer")
-    if not isinstance(b, (int, float)):
+    if type(b) is not int and type(b) is not float:
         raise TypeError("b must be an integer")
-    if isinstance(a, float):
+    if type(a) is float:
         a = int(a)
-    if isinstance(b, float):
+    if type(b) is float:
         b = int(b)
     return a + b
-
-
-if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
