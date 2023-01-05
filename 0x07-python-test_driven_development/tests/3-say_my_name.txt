@@ -56,18 +56,3 @@ Checking for more than 2 args:
 	 Traceback (most recent call last):
 	 ...
 	 TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-
