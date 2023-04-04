@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-"""
-This script takes a URL and an email parameter, sends a POST 
-request to the URL with the email data, and displays the response body.
+""" A script that:
+-This script takes a URL and an email parameter, sends a POST 
+-request to the URL with the email date 
+-displays the response body.
 """
 import sys
 import urllib.parse
