@@ -1,18 +1,21 @@
 #!/usr/bin/python3
-"""This script retrieves the 10 most recent commits on a specified GitHub
-repository and displays the commit message,author's name and timestamp.
-Usage: ./100-github_commits.py <repository name> <repository owner>
+"""
+lists the 10 most recent commits on a given GitHub repository.
 """
 import sys
 import requests
 
 
 if __name__ == "__main__":
+    repo_name = sys.argv[1]
+    owner_name = sys.argv[2]
+
     url = "https://api.github.com/repos/{}/{}/commits".format(
-        sys.argv[2], sys.argv[1])
+        owner_name, repo_name)
 
     r = requests.get(url)
     commits = r.json()
+
     try:
         for i in range(10):
             print("{}: {}".format(
