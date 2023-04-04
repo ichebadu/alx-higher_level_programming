@@ -2,7 +2,6 @@
 """ sends a request to the given URL and displays the value of the 
 X-Request-Id variable found in the response header
 """
-
 import sys
 import urllib.request
 

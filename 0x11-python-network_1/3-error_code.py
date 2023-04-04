@@ -3,7 +3,6 @@
 This script accepts a URL as input, sends a request to the URL, 
 and then displays the body of the response, decoded in UTF-8.
 """
-
 import sys
 from urllib import request, error
 
